@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="weather.css" />
+<title>My Weather App</title>
+</head>
+<body>
+<div class="container">
+   <div class="weatherInfo">
+   <div class="search">
+    <input type="text" id="searchCity" placeholder="Search The City Name"/>  
+    <div id="submit"><button>➢</button></div> 
+   </div>
+   <div class="error">
+   <p>Invalid City Name</p>
+   </div>
+   <div class="weather">
+   <div class="city">
+     <h1 id="city">Bangalore</h1>   
+   </div>
+   <div class="temperature">
+    <h2 id="tmp">30°C</h2>   
+   </div>
+   <div class="condition">
+ <h2 id="cdtn">Rainy</h2>   
+   </div>
+   <div class="details">
+      <div class="humidity">
+  <p>Humidity : </p><p id="hmd"> 59%</p>
+   </div>
+      <div class="wind">
+    <p>Wind Speed : </p><p id="windSpeed"> 6Km/h</p>  
+   </div>
+   </div>
+   </div>
+   </div>
+</div>
+
+<script type="text/javascript" src="weather.js">
+
+</script>
+</body>
+</html>
