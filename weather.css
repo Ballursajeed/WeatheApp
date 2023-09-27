@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Lato:wght@700&family=Martian+Mono&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+font-family: 'Barriecito', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Martian Mono', monospace;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+  background-image:  url(" /home/ballursajeed/Downloads/worldmap2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+button{
+ background-color: gray;
+ cursor: pointer;
+ height: 35px;
+ width: 35px;
+   border-radius: 10px; 
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.weatherInfo {
+display: flex;
+ color: white;
+ border-radius: 30px;
+ flex-direction: column;
+align-items: center;
+  height: 600px;
+  width: 600px;
+  background-color:rgba(0, 0, 0, 0.7);
+}
+
+.search{
+ margin-top: 40px;
+ height: 40px; 
+
+ position: relative;
+}
+.search #submit{
+  position: absolute;
+  right: 25px;
+  bottom: 1px;
+  cursor: pointer;
+  width: 20px;
+  color: black;
+}
+ .search input{
+ 	font-size: 17px;
+ 	text-align: left;
+ height: 40px; 
+ width: 400px;
+ background-color: gray;
+ outline: none;
+ border-radius: 20px;
+ }
+.temperature{
+ display: flex;
+margin-top: 1px;
+margin-bottom: 0px;
+color: white;
+font-size: 40px;
+height: 120px;
+justify-content: center; 
+align-items: center;
+
+ text-align: center;
+}
+.city{
+margin-top: 40px;
+margin-bottom: 0px;
+color: white;
+display: flex;
+justify-content: center; 
+align-items: center;
+
+}
+.details{
+	font-size: 20px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+
+.humidity{
+ display: flex;
+ flex-direction: row;
+}
+.wind{
+ display: flex;
+ flex-direction: row;
+}
+ #hmd{
+ margin-left: 10px; 
+ }
+ #windSpeed{
+margin-left:10px; 
+ }
+ .condition{
+ font-size: 20px;
+ margin-top:0px; 
+ display: flex;
+ justify-content: center; 
+align-items: center;
+
+ }
+
+.weather{
+display: none;
+}
+ .error{
+ text-align:left;
+ margin-left:10px;
+ font-size:40px;
+ margin-top:10px;
+ display:none; 
+ }
+ 
+ 
