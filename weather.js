@@ -17,23 +17,24 @@ async function checkWeather(city) {
  document.querySelector("#windSpeed").innerHTML= data.wind.speed+"Km/h";
  
   if (data.weather[0].main == "Clouds") {
-  	weathericon.innerHTML="Clouds";
+  	weathericon.src="https://github.com/Ballursajeed/WeatheApp/blob/main/clouds.png?raw=true";
   	}
   	else if (data.weather[0].main == "Clear") {
-  		 	weathericon.innerHTML="Clear";
+  		 	weathericon.src="https://github.com/Ballursajeed/WeatheApp/blob/main/clear.png?raw=true";
   		}
  	else if (data.weather[0].main == "Rain") {
-  		 	weathericon.innerHTML="Rain";
+  		 		weathericon.src="https://github.com/Ballursajeed/WeatheApp/blob/main/rain.png?raw=true";
   		}
   	else if (data.weather[0].main == "Drizzle") {
-  		 	weathericon.innerHTML="Drizzle";
+  		 	weathericon.src="https://github.com/Ballursajeed/WeatheApp/blob/main/rain.png?raw=true";
   		}
    else if (data.weather[0].main == "Mist") {
- 	weathericon.innerHTML="Mist";
+ 	weathericon.src="https://github.com/Ballursajeed/WeatheApp/blob/main/mist.png?raw=true";
 	  		}
 	  		document.querySelector(".weather").style.display="block";
 	  		  document.querySelector(".error").style.display="none"; 
  }
+  console.log(data);
  }
  
  searchBtn.addEventListener("click",()=>{
