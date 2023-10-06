@@ -28,6 +28,9 @@ async function checkWeather(city) {
   	else if (data.weather[0].main == "Drizzle") {
   		 	weathericon.src="https://github.com/Ballursajeed/WeatheApp/blob/main/rain.png?raw=true";
   		}
+        else if (data.weather[0].main == "Haze") {
+  		 	weathericon.src="https://github.com/Ballursajeed/WeatheApp/blob/main/Haze.png?raw=true";
+  		}
    else if (data.weather[0].main == "Mist") {
  	weathericon.src="https://github.com/Ballursajeed/WeatheApp/blob/main/mist.png?raw=true";
 	  		}
